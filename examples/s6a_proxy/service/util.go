@@ -7,8 +7,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/fiorix/go-diameter/diam"
-	"github.com/fiorix/go-diameter/examples/s6a_proxy/protos"
+	"github.com/altrandra/go-diameter/diam"
+	"github.com/altrandra/go-diameter/examples/s6a_proxy/protos"
 	"google.golang.org/grpc/codes"
 )
 

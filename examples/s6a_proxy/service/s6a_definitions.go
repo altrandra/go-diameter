@@ -3,7 +3,7 @@
 package service
 
 import (
-	"github.com/fiorix/go-diameter/diam/datatype"
+	"github.com/altrandra/go-diameter/diam/datatype"
 )
 
 // Definitions for AIA, see sample below:

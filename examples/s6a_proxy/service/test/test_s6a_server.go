@@ -9,11 +9,11 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/fiorix/go-diameter/diam"
-	"github.com/fiorix/go-diameter/diam/avp"
-	"github.com/fiorix/go-diameter/diam/datatype"
-	"github.com/fiorix/go-diameter/diam/sm"
-	"github.com/fiorix/go-diameter/examples/s6a_proxy/service"
+	"github.com/altrandra/go-diameter/diam"
+	"github.com/altrandra/go-diameter/diam/avp"
+	"github.com/altrandra/go-diameter/diam/datatype"
+	"github.com/altrandra/go-diameter/diam/sm"
+	"github.com/altrandra/go-diameter/examples/s6a_proxy/service"
 )
 
 const (

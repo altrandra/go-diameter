@@ -11,10 +11,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/fiorix/go-diameter/diam"
-	"github.com/fiorix/go-diameter/diam/avp"
-	"github.com/fiorix/go-diameter/diam/datatype"
-	"github.com/fiorix/go-diameter/diam/diamtest"
+	"github.com/altrandra/go-diameter/diam"
+	"github.com/altrandra/go-diameter/diam/avp"
+	"github.com/altrandra/go-diameter/diam/datatype"
+	"github.com/altrandra/go-diameter/diam/diamtest"
 )
 
 func TestCapabilitiesExchange(t *testing.T) {

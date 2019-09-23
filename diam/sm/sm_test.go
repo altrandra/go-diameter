@@ -8,11 +8,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/fiorix/go-diameter/diam"
-	"github.com/fiorix/go-diameter/diam/avp"
-	"github.com/fiorix/go-diameter/diam/datatype"
-	"github.com/fiorix/go-diameter/diam/diamtest"
-	"github.com/fiorix/go-diameter/diam/dict"
+	"github.com/altrandra/go-diameter/diam"
+	"github.com/altrandra/go-diameter/diam/avp"
+	"github.com/altrandra/go-diameter/diam/datatype"
+	"github.com/altrandra/go-diameter/diam/diamtest"
+	"github.com/altrandra/go-diameter/diam/dict"
 )
 
 func testResultCode(m *diam.Message, want uint32) bool {

@@ -11,9 +11,9 @@ import (
 	"net"
 	"testing"
 
-	"github.com/fiorix/go-diameter/diam/avp"
-	"github.com/fiorix/go-diameter/diam/datatype"
-	"github.com/fiorix/go-diameter/diam/dict"
+	"github.com/altrandra/go-diameter/diam/avp"
+	"github.com/altrandra/go-diameter/diam/datatype"
+	"github.com/altrandra/go-diameter/diam/dict"
 )
 
 // testMessage is used by the test cases below and also in reflect_test.go.

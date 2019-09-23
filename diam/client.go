@@ -13,7 +13,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/fiorix/go-diameter/diam/dict"
+	"github.com/altrandra/go-diameter/diam/dict"
 )
 
 // DialNetwork connects to the peer pointed to by network & addr and returns the Conn that
