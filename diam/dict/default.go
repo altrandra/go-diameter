@@ -20,10 +20,10 @@ func init() {
 		{"Base", baseXML},
 		{"Credit Control", creditcontrolXML},
 		{"Gx Charging Control", gxcreditcontrolXML},
-		{"Network Access Server", networkaccessserverXML},
+		//{"Network Access Server", networkaccessserverXML},
 		{"TGPP", tgpprorfXML},
 		{"TGPP_S6a", tgpps6aXML},
-		{"TGPP_Swx", tgppswxXML},
+		//{"TGPP_Swx", tgppswxXML},
 		{"Accounting Control", accountingcontrolXML},
 	}
 	var err error
