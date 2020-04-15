@@ -82,6 +82,10 @@ func errorCEA(sm *StateMachine, c diam.Conn, m *diam.Message, cer *smparser.CER,
 		a = m.Answer(diam.NoCommonSecurity)
 	case smparser.ErrNoCommonApplication:
 		a = m.Answer(diam.NoCommonApplication)
+	/*DRA-Whitelisting S*/
+	case smparser.ErrUnknownPeer:
+		a = m.Answer(diam.UnknownPeer)
+	/*DRA-Whitelisting S*/
 	default:
 		a = m.Answer(diam.UnableToComply)
 	}
