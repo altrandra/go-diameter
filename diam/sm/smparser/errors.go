@@ -39,6 +39,13 @@ var (
 	// application IDs in the CER don't match the applications
 	// defined in our dictionary.
 	ErrNoCommonApplication = errors.New("no common application")
+	
+	/*DRA-Whitelisting S*/
+	//ErrUnknownPeer is returned by Parse when the
+	// application IDs in the CER don't match the
+	//Host-IP-Address recieved and configured.
+	ErrUnknownPeer = errors.New("unknown peer")
+	/*DRA-Whitelisting S*/
 )
 
 // ErrUnexpectedAVP is returned by Parse when the code of the AVP passed
