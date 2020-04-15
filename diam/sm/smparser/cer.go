@@ -7,6 +7,10 @@ package smparser
 import (
 	"github.com/altrandra/go-diameter/diam"
 	"github.com/altrandra/go-diameter/diam/datatype"
+	/*DRA-Whitelisting S*/
+	"common/log"
+	"mgmt/utils"
+	/*DRA-Whitelisting S*/
 )
 
 // CER is a Capabilities-Exchange-Request message.
@@ -34,6 +38,14 @@ func (cer *CER) Parse(m *diam.Message, localRole Role) (failedAVP *diam.AVP, err
 	if err = m.Unmarshal(cer); err != nil {
 		return nil, err
 	}
+	/*DRA-Whitelisting S*/
+	if err = utils.CheckIfMMEHostIsWhiteListed(m); err != nil {
+		log.Info(log.FUNCTIONAL, "", "", "Host-IP-Address is not WhiteListed\n")
+		return nil, ErrUnknownPeer
+	} else {
+		log.Info(log.FUNCTIONAL, "", "", "Host-IP-Address is WhiteListed\n")
+	}
+	/*DRA-Whitelisting S*/
 	if err = cer.sanityCheck(); err != nil {
 		return nil, err
 	}
