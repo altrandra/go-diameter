@@ -113,7 +113,7 @@ func getMultistreamDialer(network string, timeout time.Duration, laddr net.Addr)
 		la, _ := laddr.(*sctp.SCTPAddr)
 		return sctpDialer{LocalAddr: la}
 	default:
-		return &net.Dialer{Timeout: timeout, LocalAddr: laddr}
+		return &net.Dialer{Timeout: timeout, Deadline: time.Now().Add(3*time.Second), LocalAddr: laddr}
 	}
 }
 
